@@ -16,8 +16,8 @@ bash ./step1.bash
 #catkin setup
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-source /opt/ros/melodic/setup.bash
-catkin_init_workspace
+# source /opt/ros/melodic/setup.bash
+# catkin_init_workspace
 cd ~/catkin_ws
-catkin_make
+# catkin_make
 
