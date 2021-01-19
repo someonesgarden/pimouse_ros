@@ -7,4 +7,5 @@ script:
         - bash -xve ./test/travis_pakage_make.bash
         - source ~/catkin_ws/devel/setup.bash
         - bash -xve ./test/travis_prepare_dummy_files.bash
+        - source ~/catkin_ws/devel/setup.bash  
         - rostest pimouse_ros test.launch
