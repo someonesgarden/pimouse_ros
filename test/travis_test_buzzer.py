@@ -43,7 +43,7 @@ class BuzzerTest(unittest.TestCase):
         
         ###preemptiion###
         self.device_values = []
-        self.client.send_goal(goal, feedback_db = self.feedback_cb)
+        self.client.send_goal(goal, feedback_cb = self.feedback_cb)
         # 処理中断するためのコードが以下の一行
         self.client.wait_for_result(rospy.Duration.from_sec(0.5))
 
