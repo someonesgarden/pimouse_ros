@@ -39,7 +39,7 @@ class BuzzerTest(unittest.TestCase):
         self.client.wait_for_result()
 
         self.assertTrue(self.client.get_result(), "invalid result")
-        self.assertEqual(goal.freqs, self.device_values, "invalid feedback:" + ",".join([str(e) for e in self.device_values]))
+        self.assertEqual(goal.freqs, self.device_values, "invalid feedback:,".join([str(e) for e in self.device_values]))
         
         ###preemptiion###
         self.device_values = []
